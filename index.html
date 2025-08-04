@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Urban Heat Island Narrative</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Urban Heat Island: City Heat Patterns</h1>
+  <body>This visualization explores Urban Heat Island Intensity (UHII) across major metropolitan areas in the United States. 
+    UHII measures how much warmer urban areas are compared to surrounding rural regions. The narrative guides you from a national 
+    overview to detailed ZIP-code level insights, helping to understand urban heat patterns and their relation to population density.</body>
+    <br></br>
+  <div id="sceneLabel" style="font-weight: bold; margin-bottom: 8px;"></div>
+
+  <label id="metroLabel" for="metroSelect" style="display:none;">Select Metro Area:</label>
+  <select id="metroSelect" style="display:none;"></select>
+  <div id="chart"></div>
+  <div id="annotation"></div>
+  
+  <div id="controls">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-svg-annotation@2.5.1/d3-annotation.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

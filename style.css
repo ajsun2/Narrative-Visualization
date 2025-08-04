@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#chart {
+    margin: auto;
+    max-width: 800px;
+}
+
+#annotation {
+    margin: 15px auto;
+    max-width: 800px;
+    font-size: 16px;
+    color: #444;
+}
+
+button {
+    margin: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
