@@ -13,7 +13,6 @@ let globalMSA = new Map();
 let rawData = [];
 let selectedMetro = null;
 
-// Keep track of base annotation text so we can restore it on mouseout
 let baseAnnotationText = "";
 
 const scenes = [
@@ -22,7 +21,7 @@ const scenes = [
     showScene3
 ];
 
-d3.csv("/data/clean_uhii_by_zip.csv").then(data => {
+d3.csv("data/clean_uhii_by_zip.csv").then(data => {
     rawData = data;
     rawData.forEach(d => { d.UHII = +d.UHII; });
 
@@ -71,7 +70,6 @@ function showAnnotation(html) {
 }
 
 function clearAnnotation() {
-    // Restore base annotation text when hover ends
     showAnnotation(baseAnnotationText);
 }
 
